@@ -1,0 +1,6 @@
+movie_id,title,genre,language,release_year,rating,votes,duration_minutes,director,actor,budget_million,box_office_million,hit
+1,Inception,Sci-Fi,English,2010,8.8,2200000,148,Christopher Nolan,Leonardo DiCaprio,160,829,1
+2,Dangal,Sports,Hindi,2016,8.3,200000,161,Nitesh Tiwari,Aamir Khan,11,311,1
+3,Movie 3,Action,English,2020,6.5,50000,120,Director A,Actor X,50,40,0
+4,Movie 4,Comedy,Hindi,2022,7.2,30000,110,Director B,Actor Y,20,45,1
+5,Movie 5,Drama,Tamil,2018,6.8,25000,130,Director C,Actor Z,30,25,0

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav>
+    <h2>🎬 Movie Dashboard</h2>
+    <a href="/logout">Logout</a>
+</nav>
+
+<div class="dashboard">
+
+    <h2>Welcome {{ session['user'] }}</h2>
+
+    <form method="POST">
+    <input type="text" name="movie" placeholder="Enter Movie Name" required>
+    <button type="submit">Recommend</button>
+</form>
+
+{% if movies %}
+    <h3>Recommended Movies:</h3>
+    <div class="movie-grid">
+    {% for m in movies %}
+        <div class="movie-card">
+            {{ m }}
+        </div>
+    {% endfor %}
+</div>
+{% else %}
+    <p>No recommendations yet. Please enter a movie name.</p>
+{% endif %}
+
+</div>
+
+</body>
+</html>
